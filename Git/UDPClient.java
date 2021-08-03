@@ -19,7 +19,7 @@ IPAddress, 9876);
  DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
  clientSocket.receive(receivePacket);
  String modifiedSentence = new String(receivePacket.getData());
- System.out.println("FROM SERVER:" + modifiedSentence);
+ System.out.println("From server:" + modifiedSentence);
  clientSocket.close();
  }
 }
